@@ -1,0 +1,14 @@
+created: 20240306105107267
+creator: Mcj
+modified: 20240306105346625
+modifier: Mcj
+tags: 
+title: Linux软中断排查
+
+查看CPU软中断集中在那个irq
+
+`cat /proc/interrupts` 
+
+给软中断分配CPU
+
+`echo 7 > /proc/irq/24/smp_affinity`
